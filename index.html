@@ -55,7 +55,7 @@
     }
 
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     a.button {
@@ -74,6 +74,10 @@
       color: #777;
       margin: 3rem 0 1rem;
     }
+
+    ul {
+      padding-left: 1.25rem;
+    }
   </style>
 </head>
 <body>
@@ -86,14 +90,24 @@
 <main>
 
   <section class="section">
-    <h2>Lokation</h2>
-    <p>📍 Kulturzentrum Beispielhaus, Musterstraße 123, 12345 Berlin</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=PASTE_YOUR_EMBED_URL_HERE"
-      height="300"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
+    <h2>Ablauf</h2>
+    <ul>
+      <li><strong>11:00 Uhr:</strong> Einlass</li>
+      <li><strong>11:30 Uhr:</strong> Start Runde 1</li>
+      <li>4–6 Runden Schweizer System (je nach Teilnehmerzahl)</li>
+      <li>Kurze Mittagspause nach Runde 2</li>
+      <li><strong>Ca. 18:00 Uhr:</strong> Finale & Siegerehrung</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Preise</h2>
+    <p>Alle Startgebühren fließen zu 100 % in den Preispool!</p>
+    <ul>
+      <li>🏆 1. Platz: Booster + Urkunde</li>
+      <li>🥈 2. Platz: Booster</li>
+      <li>🎉 Random Raffle: Jeder hat eine Chance auf Überraschungspreise</li>
+    </ul>
   </section>
 
   <section class="section">
@@ -104,16 +118,15 @@
       height="800">
       Wird geladen…
     </iframe>
+
     <p><strong>Teilnahmegebühr:</strong> 5 €</p>
     <ul>
       <li>💳 PayPal an: <code>pauper@email.de</code></li>
       <li>🏦 Überweisung an: <code>DE88 1234 5678 9000 0000 00</code></li>
       <li>Verwendungszweck: „Turnier + Name“</li>
     </ul>
-  </section>
 
-  <section class="section">
-    <h2>Teilnehmer</h2>
+    <h3>Teilnehmer</h3>
     <p>Es gibt insgesamt <strong>20 Plätze</strong>. Aktueller Stand:</p>
     <div class="progress-container">
       <div class="progress-bar">13 von 20 Plätzen belegt</div>
@@ -122,8 +135,19 @@
 
   <section class="section">
     <h2>Abmeldung</h2>
-    <p>Du kannst dich hier einfach wieder abmelden:</p>
+    <p>Du kannst dich hier einfach wieder abmelden, falls du doch nicht teilnehmen kannst:</p>
     <a class="button" href="https://docs.google.com/forms/d/e/PASTE_ABMELDEFORMULAR_URL_HERE/viewform" target="_blank">Zur Abmeldung</a>
+  </section>
+
+  <section class="section">
+    <h2>Lokation</h2>
+    <p>📍 Kulturzentrum Beispielhaus, Musterstraße 123, 12345 Berlin</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=PASTE_YOUR_EMBED_URL_HERE"
+      height="300"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
   </section>
 
 </main>
