@@ -1,70 +1,136 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pauper Turnier 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
+
     header {
-      background-color: #2e2e2e;
+      background-color: #1f2937;
       color: white;
       padding: 2rem;
       text-align: center;
     }
+
     main {
-      padding: 2rem;
       max-width: 800px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
-    section {
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .progress-container {
+      background: #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1rem 0;
+    }
+
+    .progress-bar {
+      background: #10b981;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      width: 65%; /* Manuell anpassbar */
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .section {
       margin-bottom: 2rem;
     }
-    h1, h2 {
-      color: #1e88e5;
+
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 3rem 0 1rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Pauper Turnier 2025</h1>
-    <p>Magic the Gathering | 14. Juni 2025 | Berlin</p>
-  </header>
-  <main>
-    <section>
-      <h2>Über das Turnier</h2>
-      <p>Willkommen zum Pauper Turnier 2025! Gespielt wird im klassischen Pauper-Format – nur Karten, die auf Magic Online als „common“ verfügbar sind.</p>
-    </section>
-    <section>
-      <h2>Ablauf</h2>
-      <ul>
-        <li>🏁 Check-In: 10:00 Uhr</li>
-        <li>🃏 Runde 1: 10:30 Uhr</li>
-        <li>🏆 Finale: ca. 17:00 Uhr</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Anmeldung</h2>
-      <p>Teilnahmegebühr: 5 €<br>
-      Anmeldung via E-Mail an <strong>pauper2025@example.com</strong> mit Name + DCI (falls vorhanden)</p>
-    </section>
-    <section>
-      <h2>Preise</h2>
-      <p>Booster, Promo-Karten & ein Überraschungspreis für das kreativste Deck!</p>
-    </section>
-    <section>
-      <h2>Ort</h2>
-      <p>Card-Café Berlin<br>
-      Magicstraße 5<br>
-      10115 Berlin</p>
-    </section>
-  </main>
+
+<header>
+  <h1>Pauper Turnier 2025</h1>
+  <p>Ein Tag voller Magic für alle, die das Format lieben</p>
+</header>
+
+<main>
+
+  <section class="section">
+    <h2>Lokation</h2>
+    <p>📍 Kulturzentrum Beispielhaus, Musterstraße 123, 12345 Berlin</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=PASTE_YOUR_EMBED_URL_HERE"
+      height="300"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <section class="section">
+    <h2>Anmeldung</h2>
+    <p>Melde dich über das folgende Formular an. Du erhältst eine Bestätigung per E-Mail.</p>
+    <iframe
+      src="https://docs.google.com/forms/d/e/PASTE_ANMELDEFORMULAR_URL_HERE/viewform?embedded=true"
+      height="800">
+      Wird geladen…
+    </iframe>
+    <p><strong>Teilnahmegebühr:</strong> 5 €</p>
+    <ul>
+      <li>💳 PayPal an: <code>pauper@email.de</code></li>
+      <li>🏦 Überweisung an: <code>DE88 1234 5678 9000 0000 00</code></li>
+      <li>Verwendungszweck: „Turnier + Name“</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Teilnehmer</h2>
+    <p>Es gibt insgesamt <strong>20 Plätze</strong>. Aktueller Stand:</p>
+    <div class="progress-container">
+      <div class="progress-bar">13 von 20 Plätzen belegt</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Abmeldung</h2>
+    <p>Du kannst dich hier einfach wieder abmelden:</p>
+    <a class="button" href="https://docs.google.com/forms/d/e/PASTE_ABMELDEFORMULAR_URL_HERE/viewform" target="_blank">Zur Abmeldung</a>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Pauper Berlin. Designed with Magic ✨
+</footer>
+
 </body>
 </html>
