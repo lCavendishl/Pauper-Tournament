@@ -1,6 +1,6 @@
 // Einfaches Beispiel: Fortschrittsbalken anhand belegter Plätze berechnen
 const belegtePlaetze = 13;
-const gesamtPlaetze = 20;
+const gesamtPlaetze = 32;
 
 const prozent = Math.round((belegtePlaetze / gesamtPlaetze) * 100);
 
