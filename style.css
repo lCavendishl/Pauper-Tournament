@@ -92,26 +92,6 @@ ul {
     color: #374151;
 }
 
-/* Mobilanpassung */
-@media (max-width: 600px) {
-    main {
-        margin: 1rem;
-        padding: 1rem;
-    }
-
-    .section {
-        padding: 1.25rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    .progress-bar {
-        font-size: 0.9rem;
-    }
-}
-
 /* Navigation */
 nav {
     margin-top: 1rem;
@@ -124,6 +104,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .nav li a {
@@ -150,7 +131,9 @@ nav {
 
 .accordion-button {
     width: 100%;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background: none;
     border: none;
@@ -161,13 +144,14 @@ nav {
 }
 
 .accordion-button::after {
-    content: '➕';
-    float: right;
+    content: '+';
     color: #166534; /* Dunkelgrün */
+    margin-left: 1rem;
+    font-weight: normal;
 }
 
 .accordion-button.active::after {
-    content: '➖';
+    content: '-';
 }
 
 .accordion-content {
@@ -180,6 +164,7 @@ nav {
     display: block;
 }
 
+/* Standard-Links */
 a {
     color: #c2410c; /* dunkleres Orange */
     text-decoration: underline;
@@ -190,4 +175,46 @@ a:hover,
 a:focus {
     color: #f97316; /* das Original-Orange deiner Buttons */
     outline: none;
+}
+
+/* Mobilanpassung */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .progress-bar {
+        font-size: 0.9rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .accordion-button::after {
+        margin-left: 0.5rem;
+    }
+
+    a.button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+    }
 }
