@@ -2,16 +2,15 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #fcd34d; /* weiß/marmoriert */
-    color: #1f1f1f;
+    background-color: #fdf6ec; /* warmes Sand */
+    color: #1f2937; /* dunkles Anthrazit */
 }
 
-
-
 /* Header/Footer */
-header, footer {
-    background-color: #f97316;
-    color: #f5f5f5;
+header,
+footer {
+    background-color: #166534; /* sattes Dunkelgrün */
+    color: #ffffff;
     padding: 2rem;
     text-align: center;
 }
@@ -28,12 +27,12 @@ main {
     padding: 1rem;
 }
 
-/* Sections mit Magic-Farben */
+/* Sections */
 .section {
     margin-bottom: 2.5rem;
     padding: 2rem;
     border-radius: 12px;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -41,7 +40,7 @@ main {
 h2 {
     margin-top: 0;
     padding-left: 0.75rem;
-    border-left: 5px solid #3b82f6; /* Blau als Standard */
+    border-left: 5px solid #166534; /* Dunkelgrün */
     font-size: 1.5rem;
 }
 
@@ -54,7 +53,7 @@ h2 {
 }
 
 .progress-bar {
-    background: #10b981;
+    background: #22c55e; /* frisches Grün */
     color: white;
     text-align: center;
     padding: 0.5rem;
@@ -67,17 +66,17 @@ h2 {
 a.button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #3b82f6;
+    background-color: #ea580c; /* warmes Orange */
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     margin: 0.5rem 0;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 a.button:hover {
-    background-color: #2563eb;
+    background-color: #c2410c; /* dunkleres Orange */
 }
 
 /* Karte & iFrame */
@@ -90,6 +89,7 @@ iframe {
 /* Listen */
 ul {
     padding-left: 1.25rem;
+    color: #374151;
 }
 
 /* Mobilanpassung */
@@ -110,4 +110,84 @@ ul {
     .progress-bar {
         font-size: 0.9rem;
     }
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #22c55e; /* frisches Grün */
+    transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+    color: #16a34a; /* dunkleres Grün */
+}
+
+/* FAQ Accordion */
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #1f2937;
+}
+
+.accordion-button::after {
+    content: '➕';
+    float: right;
+    color: #166534; /* Dunkelgrün */
+}
+
+.accordion-button.active::after {
+    content: '➖';
+}
+
+.accordion-content {
+    padding: 0 1rem 1rem;
+    display: none;
+    color: #374151;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+a {
+    color: #c2410c; /* dunkleres Orange */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #f97316; /* das Original-Orange deiner Buttons */
+    outline: none;
 }
