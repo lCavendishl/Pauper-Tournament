@@ -194,6 +194,11 @@ a:focus {
     margin: 0 auto;
 }
 
+.word-break-fix {
+  word-wrap: break-word;      /* Für ältere Browser */
+  overflow-wrap: break-word;  /* Standard-Eigenschaft */
+}
+
 /* Mobilanpassung */
 @media (max-width: 600px) {
     main {
