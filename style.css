@@ -187,11 +187,24 @@ a:focus {
     outline: none;
 }
 
+.logo {
+    max-width: 400px;
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Mobilanpassung */
 @media (max-width: 600px) {
     main {
         margin: 1rem;
         padding: 1rem;
+    }
+
+    .logo {
+        max-width: 140px;
+        width: 60%;
     }
 
     .section {
