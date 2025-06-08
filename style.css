@@ -204,7 +204,7 @@ a:focus {
     .logo {
         width: 80%; /* z. B. fast volle Breite */
         height: auto;
-        max-height: 120px; /* anpassen je nach Headerhöhe */
+        max-height: 160px; /* anpassen je nach Headerhöhe */
     }
 
     .section {
