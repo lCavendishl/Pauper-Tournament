@@ -2,7 +2,7 @@
 const progressBar = document.getElementById("progress-bar");
 
 if (progressBar) {
-  const belegtePlaetze = 13;
+  const belegtePlaetze = 0;
   const gesamtPlaetze = 32;
   const prozent = Math.round((belegtePlaetze / gesamtPlaetze) * 100);
 
