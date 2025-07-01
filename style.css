@@ -2,14 +2,17 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #fdf6ec; /* warmes Sand */
-    color: #1f2937; /* dunkles Anthrazit */
+    background-color: #fdf6ec;
+    /* warmes Sand */
+    color: #1f2937;
+    /* dunkles Anthrazit */
 }
 
 /* Header/Footer */
 header,
 footer {
-    background-color: #166534; /* sattes Dunkelgrün */
+    background-color: #166534;
+    /* sattes Dunkelgrün */
     color: #ffffff;
     padding: 2rem;
     text-align: center;
@@ -21,13 +24,15 @@ footer {
 }
 
 footer a {
-    color: #22c55e; /* oder z. B. #22c55e für frisches Grün */
+    color: #22c55e;
+    /* oder z. B. #22c55e für frisches Grün */
     text-decoration: underline;
 }
 
 footer a:hover,
 footer a:focus {
-    color: #16a34a; /* helleres Grün für Hover-Effekt */
+    color: #16a34a;
+    /* helleres Grün für Hover-Effekt */
 }
 
 /* Hauptinhalt */
@@ -50,7 +55,8 @@ main {
 h2 {
     margin-top: 0;
     padding-left: 0.75rem;
-    border-left: 5px solid #166534; /* Dunkelgrün */
+    border-left: 5px solid #166534;
+    /* Dunkelgrün */
     font-size: 1.5rem;
 }
 
@@ -63,7 +69,8 @@ h2 {
 }
 
 .progress-bar {
-    background: #22c55e; /* frisches Grün */
+    background: #22c55e;
+    /* frisches Grün */
     color: white;
     text-align: center;
     padding: 0.5rem;
@@ -76,7 +83,8 @@ h2 {
 a.button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #ea580c; /* warmes Orange */
+    background-color: #ea580c;
+    /* warmes Orange */
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -86,7 +94,8 @@ a.button {
 }
 
 a.button:hover {
-    background-color: #c2410c; /* dunkleres Orange */
+    background-color: #c2410c;
+    /* dunkleres Orange */
 }
 
 /* Karte & iFrame */
@@ -120,12 +129,14 @@ nav {
 .nav li a {
     text-decoration: none;
     font-weight: 600;
-    color: #22c55e; /* frisches Grün */
+    color: #22c55e;
+    /* frisches Grün */
     transition: color 0.3s ease;
 }
 
 .nav li a:hover {
-    color: #16a34a; /* dunkleres Grün */
+    color: #16a34a;
+    /* dunkleres Grün */
 }
 
 /* FAQ Accordion */
@@ -155,7 +166,8 @@ nav {
 
 .accordion-button::after {
     content: '+';
-    color: #166534; /* Dunkelgrün */
+    color: #166534;
+    /* Dunkelgrün */
     margin-left: 1rem;
     font-weight: normal;
 }
@@ -176,14 +188,16 @@ nav {
 
 /* Standard-Links */
 a {
-    color: #c2410c; /* dunkleres Orange */
+    color: #c2410c;
+    /* dunkleres Orange */
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 a:hover,
 a:focus {
-    color: #f97316; /* das Original-Orange deiner Buttons */
+    color: #f97316;
+    /* das Original-Orange deiner Buttons */
     outline: none;
 }
 
@@ -195,9 +209,9 @@ a:focus {
 }
 
 main a {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /* Mobilanpassung */
@@ -208,9 +222,11 @@ main a {
     }
 
     .logo {
-        width: 80%; /* z. B. fast volle Breite */
+        width: 80%;
+        /* z. B. fast volle Breite */
         height: auto;
-        max-height: 160px; /* anpassen je nach Headerhöhe */
+        max-height: 160px;
+        /* anpassen je nach Headerhöhe */
     }
 
     .section {
@@ -243,7 +259,9 @@ main a {
     a.button {
         display: block;
         width: 100%;
-        text-align: center;
-        padding: 0.75rem;
+        box-sizing: border-box;
+        padding: 0.75rem 1rem;
+        /* etwas mehr vertikal für Touch */
+        font-size: 1rem;
     }
 }
