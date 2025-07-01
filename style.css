@@ -194,9 +194,10 @@ a:focus {
     margin: 0 auto;
 }
 
-.word-break-fix {
-  word-wrap: break-word;      /* Für ältere Browser */
-  overflow-wrap: break-word;  /* Standard-Eigenschaft */
+main a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Mobilanpassung */
