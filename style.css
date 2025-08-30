@@ -201,6 +201,11 @@ a:focus {
     outline: none;
 }
 
+h3 a {
+    text-decoration: none;
+    /* entfernt die Unterstreichung */
+}
+
 .logo {
     width: 40%;
     height: auto;
