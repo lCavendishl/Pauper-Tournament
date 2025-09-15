@@ -79,6 +79,20 @@ h2 {
     font-weight: 600;
 }
 
+figure {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+figure img {
+    max-width: 450px;
+    /* maximale Breite des Bildes */
+    width: 100%;
+    /* skaliert kleiner bei schmalen Viewports */
+    height: auto;
+    display: inline-block;
+}
+
 /* Buttons */
 a.button {
     display: inline-block;
